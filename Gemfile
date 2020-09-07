@@ -38,6 +38,7 @@ group :development do
   gem 'hirb', '~> 0.7.3'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'faker', '~> 2.13'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
