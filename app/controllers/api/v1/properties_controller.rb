@@ -2,7 +2,7 @@ class Api::V1::PropertiesController < ApplicationController
   before_action :load_property, only: :show
 
   def index
-    @properties = Property.all.include(:favorites)
+    @properties = Property.all
     properties_serializer = parse_json @properties
     json_response 'Index properties successfully', true, { properties: properties_serializer }, :ok
   end

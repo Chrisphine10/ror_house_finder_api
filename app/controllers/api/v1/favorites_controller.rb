@@ -4,8 +4,8 @@ class Api::V1::FavoritesController < ApplicationController
   before_action :authenticate_with_token!, only: %i[create update destroy]
 
   def index
-    @favorities = @property.favorities
-    favorites_serializer = parse_json @favorities
+    @favorites = @property.favorites
+    favorites_serializer = parse_json @favorites
     json_response 'Index favorites successfully', true, { favorites: favorites_serializer }, :ok
   end
 
