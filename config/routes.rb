@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       end
 
       resources :properties, only: [:index, :show] do
-        resources :reviews, only: [:index, :show, :create, :update, :destroy]
+        resources :favorites, only: [:index, :show, :create, :update, :destroy]
       end
     end
   end

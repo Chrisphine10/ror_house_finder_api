@@ -1,4 +1,3 @@
 class Property < ApplicationRecord
-  belongs_to :user
-  has_one :favorite
+  has_many :favorites
 end
