@@ -1,0 +1,6 @@
+class FavoriteSerializer < ActiveModel::Serializer
+  attributes :id, :property_id, :user_id
+
+  belongs_to :user
+  belongs_to :property
+end

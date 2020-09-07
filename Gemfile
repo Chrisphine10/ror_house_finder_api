@@ -18,6 +18,7 @@ gem 'puma', '~> 4.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'active_model_serializers', '~> 0.10.10'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'simple_token_authentication', '~> 1.17'
 
@@ -35,6 +36,7 @@ end
 group :development do
   gem 'listen', '~> 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'faker', '~> 2.13'
   gem 'hirb', '~> 0.7.3'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
