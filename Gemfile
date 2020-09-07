@@ -19,6 +19,7 @@ gem 'puma', '~> 4.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'active_model_serializers', '~> 0.10.10'
+gem 'counter_culture', '~> 2.6'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'simple_token_authentication', '~> 1.17'
 
