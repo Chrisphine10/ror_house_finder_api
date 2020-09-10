@@ -24,9 +24,9 @@ default: &default
 development:
   <<: *default
   database: house_finder_development
-  username: postgres
-  password: postgres
-  host: localhost
+  # username: postgres
+  # password: postgres
+  # host: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -61,9 +61,9 @@ development:
 test:
   <<: *default
   database: house_finder_test
-  username: postgres
-  password: postgres
-  host: localhost
+  # username: postgres
+  # password: postgres
+  # host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -87,5 +87,5 @@ test:
 production:
   <<: *default
   database: house_finder_production
-  username: lifestyle
+  username: house_finder
   password: <%= ENV['LIFESTYLE_DATABASE_PASSWORD'] %>
