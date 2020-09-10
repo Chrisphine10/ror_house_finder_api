@@ -1,6 +1,8 @@
 # Overview
 The project I am going to build for the **Final Capstone Project [backend-only variant]** is based on a find your house app. I will be building an API for this app. I should familiarize myself with the [given design of the website](https://www.notion.so/Final-Capstone-Project-Find-Your-House-backend-only-variant-f3581ebfeb3341deafd7617c5b9d934d) as it is going to be my API client. 
 
+## Live Demo
+[Backend only](https://nameless-plateau-65921.herokuapp.com/)
 
 ## Features
 
@@ -42,10 +44,26 @@ The project I am going to build for the **Final Capstone Project [backend-only v
 ## Installation
 
 ~~~bash
-$ git clone https://github.com/rOluochKe/ror_house_finder_api.git
+$ git clone git@github.com:rOluochKe/ror_house_finder_api.git
 $ cd ror_house_finder_api
 $ bundle install
 $ rails db:migrate
 $ rails db:seed
 $ run rspec
 ~~~
+
+## Built by
+[Raymond Oluoch](https://github.com/rOluochKe)
+
+
+## Contributing
+
+1. Fork it (git clone git@github.com:rOluochKe/ror_house_finder_api/fork)
+2. Create your feature branch (git checkout -b feature/[choose-a-name])
+3. Commit your changes (git commit -am 'What this commit will fix/add')
+4. Push to the branch (git push origin feature/[chosen name])
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
