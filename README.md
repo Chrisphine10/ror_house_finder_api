@@ -38,7 +38,8 @@ The project I am going to build for the **Final Capstone Project [backend-only v
 8. [PUT] /api/v1/properties/1/favorites/1 Updating a favorite
 9. [DELETE] /api/v1/properties/1/favorites/1 Deleting a favorite property
 
-## Admin Routes
+## API Documentation
+[Follow this link](https://rorhousefinderapi.docs.apiary.io/#)
 
 
 ## Installation
