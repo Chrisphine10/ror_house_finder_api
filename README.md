@@ -22,26 +22,6 @@ The project I am going to build for the **Final Capstone Project [backend-only v
 13. App versioning
 14. Performance and optimization
 
-### Admin
-1. Manage properties (Create/Edit/Delete)
-2. Register/login/logout
-3. View all properties
-
-## Users Routes
-1. [POST] /api/v1/sign_up Registration
-2. [POST] /api/v1/sign_in Login
-3. [DELETE] /api/v1/log_out Log out
-4. [GET] /api/v1/properties Getting all properties
-5. [GET] /api/v1/properties/1 Getting single property
-6. [POST] /api/v1/properties/1/favorites/ Creating favorite property
-7. [GET] /api/v1/properties/1/favorites/ Getting created favorite
-8. [PUT] /api/v1/properties/1/favorites/1 Updating a favorite
-9. [DELETE] /api/v1/properties/1/favorites/1 Deleting a favorite property
-
-## API Documentation
-[Follow this link](https://rorhousefinderapi.docs.apiary.io/#)
-
-
 ## Installation
 
 ~~~bash
@@ -50,8 +30,50 @@ $ cd ror_house_finder_api
 $ bundle install
 $ rails db:migrate
 $ rails db:seed
+$ rails server
 $ run rspec
 ~~~
+
+## Endpoints
+1. User Sign up
+  ~~~bash
+  $ http POST :3000/api/v1/sign_up user:='{"email":"raymond@gmail.com", "password":"123456", "password_confirmation":"123456"}'
+  ~~~
+2. User Sign in
+  ~~~bash
+  $ http POST :3000/api/v1/sign_in sign_in:='{"email":"raymond@gmail.com", "password":"123456"}' "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+3. User Sign out
+  ~~~bash
+  $ http DELETE :3000/api/v1/log_out "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+4. Get Properties
+  ~~~bash
+  http GET :3000/api/v1/properties "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+6. Get single property
+  ~~~bash
+  http GET :3000/api/v1/properties/1 "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+7. Create favorites
+  ~~~bash
+  http POST :3000/api/v1/properties/1/favorites favorite:='{"property_id":"1", "user_id":"1"}' "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+8.  Getting favorites
+  ~~~bash
+  http GET :3000/api/v1/properties/1/favorites "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+9.  Updating favorite
+  ~~~bash
+  http PUT :3000/api/v1/properties/1/favorites/1 favorite:='{"property_id":"1", "user_id":"1"}' "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+10. Delete favorite
+  ~~~bash
+  http DELETE :3000/api/v1/properties/1/favorites/1 "AUTH-TOKEN: Bearer <your token>"
+  ~~~
+
+## API Documentation
+[Follow this link](https://rorhousefinderapi.docs.apiary.io/#)
 
 ## Built by
 [Raymond Oluoch](https://github.com/rOluochKe)
